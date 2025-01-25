@@ -1,0 +1,7 @@
+flask 
+
+duckdb
+flask db
+pandas
+numpy
+matplotlib

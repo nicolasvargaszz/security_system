@@ -1,0 +1,86 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi Proyecto con Flask + Tailwind</title>
+  <!-- Tailwind CSS CDN -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" 
+    rel="stylesheet"
+  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Encabezado (Navbar) -->
+  <nav class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-xl font-bold text-blue-600">
+        Mi Proyecto
+      </div>
+      <div>
+        <!-- Aquí puedes poner enlaces a futuras rutas -->
+        <a href="#" class="text-gray-600 hover:text-blue-600 mr-4">Inicio</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600 mr-4">Speech to Text</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Sección principal -->
+  <section class="container mx-auto px-4 py-12 text-center">
+    <h1 class="text-4xl font-bold text-gray-800 mb-4">
+      Bienvenido a Mi Proyecto Flask
+    </h1>
+    <p class="text-lg text-gray-600 mb-8">
+      Este es un ejemplo simple de una página de inicio usando Flask y Tailwind CSS.
+    </p>
+    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-500 transition">
+      Conoce más
+    </a>
+  </section>
+
+  <!-- Sección de "Destacados" o "Servicios" -->
+  <section class="container mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Tarjeta 1 -->
+    <div class="bg-white rounded shadow p-6">
+      <h2 class="text-xl font-semibold mb-2">Speech to Text</h2>
+      <p class="text-gray-600">
+        Transforma audio en texto y clasifica conversaciones (normal vs acto delictivo).
+      </p>
+      <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">
+        Ver más
+      </button>
+    </div>
+    <!-- Tarjeta 2 -->
+    <div class="bg-white rounded shadow p-6">
+      <h2 class="text-xl font-semibold mb-2">Lectura de Labios</h2>
+      <p class="text-gray-600">
+        Modulo de IA para reconocer palabras a partir de tus labios.
+      </p>
+      <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">
+        Ver más
+      </button>
+    </div>
+    <!-- Tarjeta 3 -->
+    <div class="bg-white rounded shadow p-6">
+      <h2 class="text-xl font-semibold mb-2">Detección de Objetos</h2>
+      <p class="text-gray-600">
+        Usa OpenCV o librerías similares para reconocer objetos en una imagen o video.
+      </p>
+      <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-500">
+        Ver más
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-4">
+    <div class="container mx-auto px-4 text-center text-gray-500">
+      © 2025 Mi Proyecto - Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
